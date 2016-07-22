@@ -11,28 +11,30 @@ namespace Airline_Reservations_System
         static void Main(string[] args)
         {
             
-            bool menuActive = true;
+            bool reservationmenu = true;
             
-            while (menuActive)
+            while (reservationmenu)
             {
                 // show options in the console menu
                 Console.WriteLine(" Please make your reservation");
                 Console.WriteLine(" 1. First Class");
                 Console.WriteLine(" 2. Economy");
                 Console.WriteLine(" 3. Exit");
+                Console.WriteLine("----------------------------------");
                 string selection = Console.ReadLine();
                 switch (selection)
                 {
                     case "1": // The "1" Key - Select Lotto 6 / 49"
-                        Console.WriteLine("First Class");
-                        Console.WriteLine("Please press any key to continue");
+                        Console.WriteLine("First Class slected");
+                        Console.WriteLine();
                         break;
                     case "2": // The "2" Key - Select Lotto Max
                         
-                        Console.WriteLine("Economy");
+                        Console.WriteLine("Economy class selected");
+                        Console.WriteLine();
                         break;
                     case "3": // The "3" Key - Exit the menu
-                        menuActive = false;
+                        reservationmenu = false;
                         break;
                     default:
                         Console.Clear();
