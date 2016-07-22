@@ -12,6 +12,18 @@ namespace Airline_Reservations_System
         {
             
             bool reservationmenu = true;
+            List<string> seatingchart = new List<string>();
+            seatingchart.Add("Economy");
+            seatingchart.Add("Economy");
+            seatingchart.Add("Economy");
+            seatingchart.Add("Economy");
+            seatingchart.Add("Economy");
+            seatingchart.Add("First Class");
+            seatingchart.Add("First Class");
+            seatingchart.Add("First Class");
+            seatingchart.Add("First Class");
+            seatingchart.Add("First Class");
+            List<string> assignedseats = new List<string>();
             
             while (reservationmenu)
             {
@@ -24,16 +36,16 @@ namespace Airline_Reservations_System
                 string selection = Console.ReadLine();
                 switch (selection)
                 {
-                    case "1": // The "1" Key - Select Lotto 6 / 49"
+                    case "1": // The "1" neumeric key selects economy class
                         Console.WriteLine("First Class slected");
                         Console.WriteLine();
                         break;
-                    case "2": // The "2" Key - Select Lotto Max
-                        
+                    case "2": // The "2" numeric key selects first class
+
                         Console.WriteLine("Economy class selected");
                         Console.WriteLine();
                         break;
-                    case "3": // The "3" Key - Exit the menu
+                    case "3": // The "3" numeric Key to Exit the menu
                         reservationmenu = false;
                         break;
                     default:
