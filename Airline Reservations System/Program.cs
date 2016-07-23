@@ -12,6 +12,7 @@ namespace Airline_Reservations_System
         {
             
             bool reservationmenu = true;
+            //adding items to the list
             List<string> seatingchart = new List<string>();
             seatingchart.Add("Economy");
             seatingchart.Add("Economy");
